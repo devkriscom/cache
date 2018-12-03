@@ -1,0 +1,17 @@
+prefix  : '_super_cache'
+adapter : 'file'
+adapters:
+  file:
+    path: "%storage_path%/cache"
+  array:
+factory:
+  apc: Nusantara\Cache\Factory\ApcFactory
+  file: Nusantara\Cache\Factory\FileFactory
+  array: Nusantara\Cache\Factory\ArrayFactory
+  redis: Nusantara\Cache\Factory\RedisFactory
+  memcached: Nusantara\Cache\Factory\MemcachedFactory
+  opcache : Nusantara\Cache\Factory\OpCacheFactory
+  
+
+
+  
